@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数学思维学编程 · 每日一题</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+  <style>/* __STYLES__ */</style>
+</head>
+<body>
+
+<div class="toolbar" id="toolbar" style="display:none">
+  <a href="#" class="toolbar-btn" id="back-btn">目录</a>
+  <a href="#" class="toolbar-btn" id="prev-btn">← 上一题</a>
+  <a href="#" class="toolbar-btn" id="next-btn">下一题 →</a>
+  <button id="share-btn" class="toolbar-btn">📋 文案</button>
+  <button id="download-btn" class="toolbar-btn toolbar-btn-primary">下载 PNG</button>
+</div>
+
+<div class="share-modal" id="share-modal" style="display:none">
+  <div class="share-modal-inner">
+    <div class="share-modal-title">分享文案（Ctrl+C 或 Cmd+C 复制）</div>
+    <textarea class="share-modal-text" id="share-text" readonly></textarea>
+    <div class="share-modal-actions">
+      <button class="share-modal-btn" id="share-modal-copy">再复制一次</button>
+      <button class="share-modal-btn share-modal-btn-primary" id="share-modal-close">关闭</button>
+    </div>
+  </div>
+</div>
+
+<div id="app"></div>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/cpp.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>window.LESSONS = __DATA_JSON__;</script>
+<script>/* __APP_JS__ */</script>
+
+</body>
+</html>

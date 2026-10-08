@@ -1,0 +1,14 @@
+{
+  "name": "math-poster",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^15.0.2",
+    "markdown-it-container": "^4.0.0"
+  }
+}

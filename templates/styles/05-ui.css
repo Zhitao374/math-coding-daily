@@ -1,0 +1,111 @@
+/* =========================================================
+   顶部工具条
+   ========================================================= */
+.toolbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+.toolbar-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid #26365a;
+  background: #16213a;
+  color: #e8eefc;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .18s;
+  font-family: inherit;
+}
+.toolbar-btn:hover {
+  border-color: #38bdf8;
+  background: #1e2b48;
+}
+.toolbar-btn-primary {
+  background: linear-gradient(135deg, #f5a524, #ff8a3d);
+  color: #1a1206;
+  border-color: transparent;
+}
+.toolbar-btn-primary:hover { filter: brightness(1.08); }
+.toolbar-btn:disabled { opacity: .6; cursor: wait; }
+/* =========================================================
+   分享文案弹窗
+   ========================================================= */
+.share-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 20, .8);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.share-modal-inner {
+  background: #16213a;
+  border: 1px solid #26365a;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+}
+.share-modal-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e8eefc;
+  margin-bottom: 14px;
+}
+.share-modal-text {
+  width: 100%;
+  min-height: 140px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #26365a;
+  background: #0d1526;
+  color: #e8eefc;
+  font-family: -apple-system, "Segoe UI", "PingFang SC", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  resize: vertical;
+  outline: none;
+}
+.share-modal-text:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, .15);
+}
+.share-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+.share-modal-btn {
+  padding: 9px 18px;
+  border-radius: 9px;
+  border: 1px solid #26365a;
+  background: #1e2b48;
+  color: #e8eefc;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all .18s;
+}
+.share-modal-btn:hover {
+  border-color: #38bdf8;
+}
+.share-modal-btn-primary {
+  background: linear-gradient(135deg, #f5a524, #ff8a3d);
+  color: #1a1206;
+  border-color: transparent;
+}
+.share-modal-btn-primary:hover {
+  filter: brightness(1.08);
+}
