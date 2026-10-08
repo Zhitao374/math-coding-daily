@@ -94,7 +94,7 @@
 ### 安装
 
 ```bash
-git clone https://github.com/你的用户名/math-coding-daily.git
+git clone https://github.com/Zhitao374/math-coding-daily.git
 cd math-coding-daily
 npm install
 ```
